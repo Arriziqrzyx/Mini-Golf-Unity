@@ -42,9 +42,7 @@ public class Ball : MonoBehaviour
     {
         if (other.gameObject.tag == "Out")
         {
-            // cek apakah courutine start 2 kali atau lebih jika iya stop
             StopAllCoroutines();
-            // teleport
             StartCoroutine(DelayedTeleport());
         }
     }

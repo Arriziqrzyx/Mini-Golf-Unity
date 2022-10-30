@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Camera cam;
     [SerializeField] FollowBall cameraPivot;
     [SerializeField] Vector2 camSensitivity;
+    [SerializeField] AudioSource audioSource;
     [SerializeField] float shootForce;
     Vector3 lastMousePosition;
     float ballDistance;
@@ -145,6 +146,7 @@ public class PlayerController : MonoBehaviour
             arrow.SetActive(false);
             aim.gameObject.SetActive(false);
             line.enabled = false;
+            audioSource.PlayOneShot(audioSource.clip);
         }
 
         lastMousePosition = Input.mousePosition;

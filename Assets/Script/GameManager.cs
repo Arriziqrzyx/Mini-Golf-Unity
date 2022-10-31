@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneLoader.Load("MainMenu");
+        SceneLoader.Load("Main Menu 1");
     }
 
     public void Replay()
